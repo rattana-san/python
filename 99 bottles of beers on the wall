@@ -1,0 +1,7 @@
+
+for i in range(99,0,-1):
+  print(str(i) + " bottles of beer on the wall.")
+  print("")
+  print(str(i)+ " bottles of beer on the wall")
+  print(str(i) + " bottles of beer")
+  print("take one down and pass it around")

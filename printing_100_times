@@ -1,0 +1,14 @@
+
+#method 1:
+for i in range(101): #if 'i' is between 0 and 101 then the following program will run: 
+    print ("I will not sleep in class")
+    #This prints "I will not sleep in class" 100 times not 101 times because the 'range' function only counts until the number before it.
+
+print("")
+
+#Or you can use this method as well:
+r = 0 #This sets r as 0 when the program starts
+while r != 100: #sets a condition if r is not 100, the following program will run:
+  print("Yes") 
+  r += 1
+  #This prints "Yes" 100x

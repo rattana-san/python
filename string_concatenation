@@ -1,0 +1,7 @@
+#string concatenation is pringting multiple things in one line. EG:
+
+print("")
+name = str(input("Enter your name: "))
+print("")
+print("Welcome to our website '" + (name) + "'.") #This prints them all on the same line. (Even the punctuation marks.)
+print("")

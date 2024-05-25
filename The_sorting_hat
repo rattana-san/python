@@ -1,0 +1,134 @@
+Gryffindor = 0
+Ravenclaw = 0
+Hufflepuff= 0
+Slytherin = 0
+
+print("")
+print("This is a multiple choice question.")
+print("Please type the correct number for each questions.")
+input("Click enter here to start->  ")
+
+print("")
+print ("Q1) Do you like Dawn or Dusk?")
+print ("1.) Dawn")
+print ("2.) Dusk")
+A1 = int(input("Enter 1 or 2 here: "))
+if A1 == 1:
+  Gryffindor += 1 
+  Ravenclaw += 1
+elif A1 == 2:
+  Hufflepuff += 1
+  Slytherin += 1
+else: 
+  print("Wrong input. Try again.")
+
+print("")
+print("Q2) When I’m dead, I want people to remember me as:")
+print("1) The Good")
+print("2) The Great")
+print("3) The wise")
+print("4) The bold")
+A2 = int(input("Enter the number here: "))
+if A2 == 1:
+  Hufflepuff += 2
+elif A2 == 2:
+  Slytherin += 2
+elif A2 == 3:
+  Ravenclaw += 2
+elif A2 == 4:
+  Gryffindor += 2
+else:
+  print("Wrong input. Try again.")
+
+print("")
+print("Q3) What kind of instrument pleases your ears?")
+print("1) The violin")
+print("2) The trumpet")
+print("3) The piano")
+print("4) The drums")
+A3 = int(input("Enter the number here: "))
+if A3 == 1:
+  Slytherin += 3
+elif A3 == 2:
+  Hufflepuff += 3
+elif A3 == 3:
+  Ravenclaw += 3
+elif A3 == 4:
+  Slytherin += 3
+else:
+  print("Wrong input. Please try again.")
+
+print("")
+print("Q4) At Hogwarts you would want to study: ")
+print("1) Broom flying")
+print("2) Care of magical creatures")
+print("3) Hexes/Jinxes")
+print("4) Potions")
+A4 = int(input("Enter the number pls: "))
+if A4 == 1:
+  Gryffindor += 3
+elif A4 == 2:
+  Hufflepuff += 3
+elif A4 == 3:
+  Slytherin += 3
+elif A4 == 4:
+  Ravenclaw += 3
+else:
+  print("Wrong input. Please try again.")
+
+print("")
+print("Q5) What smell is most appealing to you? ")
+print("1) Home")
+print("2) The sea")
+print("3) Fresh parchment")
+print("4) A log fire")
+A5 = int(input("Enter the number pls: "))
+if A5 == 1:
+  Slytherin += 2
+elif A5 == 2:
+  Hufflepuff += 2
+elif A5 == 3:
+  Ravenclaw += 2
+elif A5 == 4:
+  Gryffindor += 2
+else:
+  print("Wrong input. Please try again.")
+
+print("")
+print("Q6) What's your favorite subject in school?")
+print("1) Maths")
+print("2) P.E")
+print("3) Science")
+print("4) Break time")
+A6 = int(input("Enter the number here mor: "))
+if A6 == 1:
+  Ravenclaw += 3
+elif A6 == 2:
+  Gryffindor += 3
+elif A6 == 3:
+  Slytherin += 3
+elif A6 == 4:
+  Hufflepuff += 3
+else:
+  print("Wrong input. Please redo")
+
+print("")
+print("")
+print("------------------------------------------------")
+print("Congrats! You are a:")
+print("")
+highscore = max(Gryffindor, Slytherin, Hufflepuff, Ravenclaw)
+
+if highscore == Gryffindor:
+  print("Gryffindor")
+elif highscore == Slytherin:
+  print("Slytherin")
+elif highscore == Hufflepuff:
+  print("Hufflepuff")
+elif highscore == Ravenclaw:
+  print("Ravenclaw")
+else:
+  print("Failed to compute. Please retry.")
+
+print("-----------------------------------------------")
+print("")
